@@ -17,7 +17,7 @@ A well-trained VAE on MNIST defines a 2D latent space, but rather than treating 
 
 The MNIST dataset in latent space:
 
-![](/projects/rivae/assets/mnist_latent_space.png)
+![](/jrunkening/projects/rivae/assets/mnist_latent_space.png)
 
 [**Interactive Visualization**](/projects/rivae/assets/mnist_latent_space.html)
 
@@ -40,7 +40,7 @@ This metric — termed UDLD (Uncertainty and Density-aware Latent Distance) — 
 A k-nearest neighbor (kNN) graph built from UDLD distances discretely approximates the manifold’s chart structure.
 Edges implicitly align with geodesics because the UDLD penalization discourages connections that cross uncertain or low-density regions — effectively tracing along the manifold’s high-confidence surface.
 
-![](/projects/rivae/assets/mnist_latent_space_manifold.png)
+![](/jrunkening/projects/rivae/assets/mnist_latent_space_manifold.png)
 
 [**Interactive Visualization**](/projects/rivae/assets/mnist_latent_space_manifold.html)
 
@@ -62,13 +62,13 @@ Each intermediate latent code is decoded into an image, yielding a smooth semant
 The resulting animation reveals a discrete geodesic on the epistemic manifold —
 each frame a valid MNIST digit, transitioning smoothly in semantic space without leaving the data support.
 
-![](/projects/rivae/assets/mnist_latent_space_trajectory.png)
+![](/jrunkening/projects/rivae/assets/mnist_latent_space_trajectory.png)
 
 [**Interactive Visualization**](/projects/rivae/assets/mnist_latent_space_trajectory.html)
 
 | Start | End | Transition |
 |-------|-----| -----------|
-| ![](/projects/rivae/assets/mnist_trajectory_start.png) | ![](/projects/rivae/assets/mnist_trajectory_end.png) | ![](/projects/rivae/assets/mnist_trajectory.gif) |
+| ![](/jrunkening/projects/rivae/assets/mnist_trajectory_start.png) | ![](/jrunkening/projects/rivae/assets/mnist_trajectory_end.png) | ![](/jrunkening/projects/rivae/assets/mnist_trajectory.gif) |
 
 Such non-deterministic paths can represent families of valid interpolations, sampling multiple epistemically consistent routes between two data modes.
 

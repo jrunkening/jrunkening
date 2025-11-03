@@ -49,8 +49,8 @@ The VAE is training on FFHQ 256x256 dataset
 
 | Original | Reconstructed |
 |----------|---------------|
-| ![](/projects/vae/assets/gallery_jingyu/original.jpg) | ![](/projects/vae/assets/gallery_jingyu/reconstructed.jpg) |
-| ![](/projects/vae/assets/gallery_willa_fitzgerald/original.jpg) | ![](/projects/vae/assets/gallery_willa_fitzgerald/reconstructed.jpg) |
+| ![](/jrunkening/projects/vae/assets/gallery_jingyu/original.jpg) | ![](/jrunkening/projects/vae/assets/gallery_jingyu/reconstructed.jpg) |
+| ![](/jrunkening/projects/vae/assets/gallery_willa_fitzgerald/original.jpg) | ![](/jrunkening/projects/vae/assets/gallery_willa_fitzgerald/reconstructed.jpg) |
 
 ## Mask
 
@@ -60,5 +60,5 @@ The decoder is able to understand masked images in latent space and can reconstr
 
 | Original | Target | Masked In Latent Space |
 |----------|--------|------------------------|
-| ![](/projects/vae/assets/gallery_jingyu/original.jpg) | ![](/projects/vae/assets/gallery_jingyu/masked.jpg) | ![](/projects/vae/assets/gallery_jingyu/masked_reconstructed.jpg) |
-| ![](/projects/vae/assets/gallery_willa_fitzgerald/original.jpg) | ![](/projects/vae/assets/gallery_willa_fitzgerald/masked.jpg) | ![](/projects/vae/assets/gallery_willa_fitzgerald/masked_reconstructed.jpg) |
+| ![](/jrunkening/projects/vae/assets/gallery_jingyu/original.jpg) | ![](/jrunkening/projects/vae/assets/gallery_jingyu/masked.jpg) | ![](/jrunkening/projects/vae/assets/gallery_jingyu/masked_reconstructed.jpg) |
+| ![](/jrunkening/projects/vae/assets/gallery_willa_fitzgerald/original.jpg) | ![](/jrunkening/projects/vae/assets/gallery_willa_fitzgerald/masked.jpg) | ![](/jrunkening/projects/vae/assets/gallery_willa_fitzgerald/masked_reconstructed.jpg) |
