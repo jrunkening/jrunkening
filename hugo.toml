@@ -94,7 +94,7 @@ pagination.pagerSize = 5
 
         [languages.en.params.logo]
             logoText = "~/JingYu"
-            logoHomeLink = "/"
+            logoHomeLink = "/jrunkening"
 
         [languages.en.menu]
             [[languages.en.menu.main]]
