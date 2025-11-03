@@ -10,8 +10,6 @@ tags = ["Generative Model", "VAE", "Manifold", "Geodesic", "Riemannian Geometry"
     Toc = true
 +++
 
-![](/projects/rivae/assets/logo_dark.png)
-
 Instead of sampling from a fixed Gaussian prior \\(z \sim \mathcal{N}(0, I)\\), RiVAE generates data by navigating through the learned latent geometry.
 A well-trained VAE on MNIST defines a 2D latent space, but rather than treating it as flat, I reinterpret it as a Riemannian-like manifold induced by the model’s own epistemic structure — namely, its local uncertainty and global density.
 
