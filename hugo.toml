@@ -1,4 +1,4 @@
-baseURL = "https://jrunkening.github.io/"
+baseURL = "https://jrunkening.github.io/jrunkening/"
 languageCode = "en-us"
 title = "~/JingYu"
 theme = "terminal"
