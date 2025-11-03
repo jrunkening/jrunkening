@@ -3,6 +3,7 @@ title = "Pullback Riemannian Metric"
 date = 2025-10-10
 updated = 2025-10-11
 description = "形式化推導與在生成模型中的意義"
+
 tags = ["Riemannian Geometry", "VAE", "Generative Model", "Manifold"]
 
 [params]
