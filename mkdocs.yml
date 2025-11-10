@@ -23,6 +23,10 @@ theme:
   logo: assets/wizard_goose_rembg.png
   favicon: assets/wizard_goose_rembg.png
 
+  features:
+    - navigation.tabs
+    # - navigation.tabs.sticky
+
 plugins:
   - tags
   - search
