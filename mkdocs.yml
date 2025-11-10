@@ -1,6 +1,17 @@
 site_name: ~JingYu
 site_url: https://jrunkening.github.io/jrunkening
 
+nav:
+  - Home: index.md
+  - Blog:
+      - "2025-10-10: Pullback Riemannian Metric": posts/pullback_riemannian_metric/index.md
+  - Projects:
+      - "Featured": projects/index.md
+      - "VAE": projects/vae/index.md
+      - "Diffusion": projects/diffusion/index.md
+      - "RiVAE": projects/rivae/index.md
+  - Tags: tags.md
+
 theme:
   name: material
 

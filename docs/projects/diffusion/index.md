@@ -17,7 +17,7 @@ A simplified, home-made diffusion model that can be trained on 5GB VRAM
 
 This project implements a [DDPM](https://arxiv.org/abs/2006.11239) training framework
 that departs from [standard latent diffusion pipelines](https://arxiv.org/abs/2112.10752).
-It integrates [a custom VAE architecture](../vae/)
+It integrates [a custom VAE architecture](../vae/index.md)
 with a serpentine sequence-processing module,
 producing a latent space that is both sharper and less leaky,
 making it well-suited for iterative denoising and high-fidelity reconstructions.
@@ -26,7 +26,7 @@ making it well-suited for iterative denoising and high-fidelity reconstructions.
 
 #### VAE with Localized and Aligned Latents
 
-The [VAE](../vae/)
+The [VAE](../vae/index.md)
 has been carefully designed to mitigate the blurring and leakage issues common in conventional implementations.
 Its decoder avoids oversized convolution kernels, which reduces cross-pixel contamination,
 and the latent-to-pixel mapping is tightly aligned so that each latent feature corresponds to localized structures within the image.
