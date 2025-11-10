@@ -1,0 +1,1145 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jrunkening.github.io/jrunkening/posts/pullback_riemannian_metric/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../projects/">
+      
+      
+      <link rel="icon" href="../../assets/wizard_goose_rembg.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>2025-10-10: Pullback Riemannian Metric - ~/JingYu</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pullback-riemannian-metric" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="~/JingYu" class="md-header__button md-logo" aria-label="~/JingYu" data-md-component="logo">
+      
+  <img src="../../assets/wizard_goose_rembg.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ~/JingYu
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2025-10-10: Pullback Riemannian Metric
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="orange" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/" class="md-tabs__link">
+          
+  
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="~/JingYu" class="md-nav__button md-logo" aria-label="~/JingYu" data-md-component="logo">
+      
+  <img src="../../assets/wizard_goose_rembg.png" alt="logo">
+
+    </a>
+    ~/JingYu
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Featured
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2025-10-10: Pullback Riemannian Metric
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025-10-10: Pullback Riemannian Metric
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 直觀概念
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 正式定義
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-vae" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 在 VAE 以及其他生成模型中的語意空間
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 典型例子
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 典型例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 曲線參數化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 球面參數化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-vae" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 VAE 圖像語義
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 為何需要拉回
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pullback-pushforward" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Pullback 與 Pushforward（操作對偶）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-degeneracy-regularization" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 退化與正則（Degeneracy &amp; Regularization）
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Featured
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/vae/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VAE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/diffusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Diffusion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/rivae/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RiVAE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 直觀概念
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 正式定義
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-vae" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 在 VAE 以及其他生成模型中的語意空間
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 典型例子
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 典型例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 曲線參數化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 球面參數化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-vae" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 VAE 圖像語義
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 為何需要拉回
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pullback-pushforward" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Pullback 與 Pushforward（操作對偶）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-degeneracy-regularization" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 退化與正則（Degeneracy &amp; Regularization）
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags">
+    
+      
+      
+      
+        <a href="../../tags/#tag:generative-model" class="md-tag">Generative Model</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:manifold" class="md-tag">Manifold</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:riemannian-geometry" class="md-tag">Riemannian Geometry</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:vae" class="md-tag">VAE</a>
+      
+    
+  </nav>
+
+
+
+<h1 id="pullback-riemannian-metric">Pullback Riemannian Metric</h1>
+<p>在這篇文章中，我會嘗試用形式化的方式描述 <strong>pullback Riemannian metric</strong>，
+整理他的幾何定義以及在 VAE/Generative Models 中的解釋，同時使用典型教課書例子來補充說明。</p>
+<h2 id="1">1. 直觀概念</h2>
+<p>給定一個映射 <span class="arithmatex">\(f: \mathcal{Z} \to \mathcal{X}\)</span> （例如 VAE 中的 decoder），
+在資料存在的於輸出空間 <span class="arithmatex">\(\mathcal{X}\)</span> 中，我們通常可以使用標準歐幾里得內積來度量不同筆資料之間的「差異」。</p>
+<p>Pullback 利用 <span class="arithmatex">\(f\)</span> 將輸出空間 <span class="arithmatex">\(\mathcal{X}\)</span> 的度量規則搬回潛在空間 <span class="arithmatex">\(\mathcal{Z}\)</span>，
+使得在 <span class="arithmatex">\(\mathcal{Z}\)</span> 中的每個點 <span class="arithmatex">\(z\)</span> 的小位移（切向量）也能依「對輸出造成的實際變化」來度量。</p>
+<p>若輸出空間 <span class="arithmatex">\(\mathcal{X}\)</span> 使用標準內積，則在潛在空間 <span class="arithmatex">\(\mathcal{Z}\)</span> 定義的拉回度量可以寫成：</p>
+<div class="arithmatex">\[G(z) = J_f(z)^T J_f(z)\]</div>
+<p>其中 <span class="arithmatex">\(J_f(z)\)</span> 是 <span class="arithmatex">\(f\)</span> 在點 <span class="arithmatex">\(z\)</span> 的 Jacobian。</p>
+<p>所以，潛在空間 <span class="arithmatex">\(\mathcal{Z}\)</span> 裡的一小步 <span class="arithmatex">\(dz\)</span> 的長度由該點在輸出空間 <span class="arithmatex">\(\mathcal{X}\)</span> 的影響 <span class="arithmatex">\(J_f(z) dz\)</span> 的歐氏距離所描述：</p>
+<div class="arithmatex">\[\|dz\|_{G(z)} = \|J_f(z) dz\|_2\]</div>
+<p><strong>語義改變大</strong>的方向根據 pullback metric 量測的距離就<strong>較長</strong>。</p>
+<h2 id="2">2. 正式定義</h2>
+<p>設 <span class="arithmatex">\(f : (M, -) \to (N, g_N)\)</span> 為光滑映射；<span class="arithmatex">\(g_N\)</span> 是目標流形 <span class="arithmatex">\(N\)</span> 上的 Riemann metric。
+Pullback metric（記為 <span class="arithmatex">\(f^* g_N\)</span>）是在 <span class="arithmatex">\(M\)</span> 上的新度量，對任意 <span class="arithmatex">\(p\in M\)</span> 及切向量 <span class="arithmatex">\(u,v \in T_p M\)</span> 定義：</p>
+<div class="arithmatex">\[(f^* g_N)_p(u,v) = g_N\big(f(p)\big)\big( (Df)_p(u), (Df)_p(v) \big)\]</div>
+<p>即：先透過 Jacobian 將 <span class="arithmatex">\((u, v)\)</span> 推送到 <span class="arithmatex">\(N\)</span> 的切空間，再用既有度量量測。這種「將結構從目標空間帶回來源空間」的普遍操作稱為 pullback（對偶操作是 pushforward 將向量送往目標）。</p>
+<p>若 <span class="arithmatex">\(N = \mathbb{R}^m\)</span> 且採用標準內積 <span class="arithmatex">\(\langle a,b \rangle = a^T b\)</span>，則：</p>
+<div class="arithmatex">\[(f^* g_{\text{Euc}})_p(u,v) = \langle J_f(p) u, J_f(p) v \rangle = u^T (J_f(p)^T J_f(p)) v\]</div>
+<h2 id="3-vae">3. 在 VAE 以及其他生成模型中的語意空間</h2>
+<p>對一個 VAE 來說，decoder <span class="arithmatex">\(f\)</span> 將潛在向量 <span class="arithmatex">\(z\)</span> 映射為圖片（資料） <span class="arithmatex">\(x = f(z)\)</span>。
+透過 pullback，於每個 <span class="arithmatex">\(z\)</span> 得到對稱正半定矩陣：</p>
+<div class="arithmatex">\[G(z) = J_f(z)^T J_f(z)\]</div>
+<p>其誘導 (induced) 的內積與長度：</p>
+<div class="arithmatex">\[\|u\|_{G(z)} = \sqrt{u^T G(z) u} = \|J_f(z) u\|_2\]</div>
+<p>對<strong>輸出影像 <span class="arithmatex">\(x\)</span></strong> 造成大改變的<strong>潛在方向 <span class="arithmatex">\(dz\)</span></strong> 被賦予較大長度，
+當我們選擇沿著 geodesic （測地線，最短曲線）行走時， geodesic 傾向避開語義跳躍或是不連貫的方向，
+因而產生更平滑、語義連續的插值。</p>
+<h2 id="4">4. 典型例子</h2>
+<h3 id="41">4.1 曲線參數化</h3>
+<p>對於一個單位圓曲線的參數 <span class="arithmatex">\(t\)</span>，我們可以把它看作為一個 embedding 。
+對於這個潛空間，我們可以定義 projection ：</p>
+<div class="arithmatex">\[f : [0,2\pi) \to \mathbb{R}^2\]</div>
+<div class="arithmatex">\[f(t) = (\cos t, \sin t)\]</div>
+<p>Projection <span class="arithmatex">\(f\)</span> 將一維參數繞成平面單位圓。</p>
+<p>他的 Jacobian 可以寫成一個 2x1 的矩陣：</p>
+<div class="arithmatex">\[J_f(t) = \begin{bmatrix}-\sin t \\ \cos t \end{bmatrix}\]</div>
+<p>因此可以算出他的 pullback metric 為：</p>
+<div class="arithmatex">\[G(t) = J_f(t)^T J_f(t)\]</div>
+<div class="arithmatex">\[= \begin{bmatrix}-\sin t &amp; \cos t\end{bmatrix} \begin{bmatrix}-\sin t \\ \cos t \end{bmatrix}\]</div>
+<div class="arithmatex">\[= \sin^2 t + \cos^2 t = 1\]</div>
+<p>因為參數空間是一維，因此 metric 是一個純量。</p>
+<p><strong>幾何意義：</strong></p>
+<ol>
+<li>參數 <span class="arithmatex">\(t\)</span> 已經是弧長參數（arc-length parameterization），故單位的 <span class="arithmatex">\(dt\)</span> 直接對應圓上長度 <span class="arithmatex">\(ds=dt\)</span>。</li>
+<li>路徑長度 <span class="arithmatex">\(L = \int_a^b \sqrt{G(t)} dt = b-a\)</span> 。</li>
+<li>沒有尺度扭曲，曲線上任何地方的參數步長都代表同樣的實際弧長。</li>
+</ol>
+<p><strong>討論：</strong></p>
+<ul>
+<li>這個參數化本身已經均勻等速的遍歷單位圓，所以 <span class="arithmatex">\(G(t)\)</span> 使一個不依賴 <span class="arithmatex">\(t\)</span> 的函數。</li>
+<li>若改成 <span class="arithmatex">\(f(t) = (\cos t^2, \sin t^2)\)</span> 則 <span class="arithmatex">\(G(t)=4 t^2\)</span> ， pullback 會反映非均勻速度。</li>
+<li>一維情況下 pullback metric 就是曲線速度平方，速度是一個常數代表 metric 是一個常數。</li>
+</ul>
+<h3 id="42">4.2 球面參數化</h3>
+<p>對於一個標準單位球面 <span class="arithmatex">\(S^2\)</span> 的參數化：</p>
+<div class="arithmatex">\[f(\theta,\phi) = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)\]</div>
+<div class="arithmatex">\[\theta\in[0,\pi], \quad \phi\in[0,2\pi)\]</div>
+<p><span class="arithmatex">\(\theta\)</span> 為極角（colatitude），<span class="arithmatex">\(\phi\)</span> 為方位角（longitude）。</p>
+<p>他的 Jacobian 可以寫成一個 3×2 的矩陣，此時他作用的是一個二維向量 <span class="arithmatex">\(\begin{bmatrix}\theta &amp; \phi\end{bmatrix}\)</span></p>
+<div class="arithmatex">\[
+J_f(\theta,\phi)=\begin{bmatrix}
+\cos\theta\cos\phi &amp; -\sin\theta\sin\phi \\
+\cos\theta\sin\phi &amp; \sin\theta\cos\phi \\
+-\sin\theta &amp; 0
+\end{bmatrix}
+\]</div>
+<p>計算他的 pullback metric <span class="arithmatex">\(G = J_f^T J_f\)</span>，可以得到經典球面第一基本形式：</p>
+<div class="arithmatex">\[G(\theta,\phi)=\begin{bmatrix}1 &amp; 0 \\ 0 &amp; \sin^2\theta\end{bmatrix}\]</div>
+<p>其中：
+<span class="arithmatex">\(\langle \partial_\theta f, \partial_\theta f\rangle=1\)</span>，
+<span class="arithmatex">\(\langle \partial_\phi f, \partial_\phi f\rangle=\sin^2\theta\)</span>，
+<span class="arithmatex">\(\langle \partial_\theta f, \partial_\phi f\rangle=0\)</span>。</p>
+<p><strong>幾何意義：</strong></p>
+<ol>
+<li>微線元素 <span class="arithmatex">\(ds^2 = d\theta^2 + \sin^2\theta d\phi^2\)</span>。</li>
+<li>緯度圈半徑為 <span class="arithmatex">\(\sin\theta\)</span>：越靠近兩極（<span class="arithmatex">\(\theta \to 0,\pi\)</span>）沿 <span class="arithmatex">\(\phi\)</span> 方向的實際距離越小。</li>
+<li>參數化是正交的（無交叉項），故微面元素 <span class="arithmatex">\(dA = \sin\theta\, d\theta d\phi\)</span>。</li>
+</ol>
+<p><strong>討論：</strong></p>
+<ul>
+<li>此參數系統本身是正交座標，所以沒有交叉項。</li>
+<li>可用 <span class="arithmatex">\(\sin^2\phi\)</span> 嗎？不行，因為縮放來自緯度圈半徑，僅依賴 <span class="arithmatex">\(\theta\)</span>。</li>
+<li>兩極「奇異」是坐標系統問題，並非球面幾何本身退化。</li>
+</ul>
+<p><strong>與 4.1 比較：</strong></p>
+<table>
+<thead>
+<tr>
+<th>面向</th>
+<th>曲線 (4.1)</th>
+<th>球面 (4.2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>維度</td>
+<td>1 → 2</td>
+<td>2 → 3</td>
+</tr>
+<tr>
+<td>Jacobian 形狀</td>
+<td>2×1</td>
+<td>3×2</td>
+</tr>
+<tr>
+<td>度量形式</td>
+<td>常數 1</td>
+<td><span class="arithmatex">\(\mathrm{diag}(1,\sin^2\theta)\)</span></td>
+</tr>
+<tr>
+<td>均勻性</td>
+<td>參數=弧長</td>
+<td>經度的縮放隨著 <span class="arithmatex">\(\theta\)</span> 改變</td>
+</tr>
+<tr>
+<td>幾何現象</td>
+<td>等速繞圓</td>
+<td>緯度圈收縮、兩極奇異</td>
+</tr>
+</tbody>
+</table>
+<p>這例子展示 pullback 如何自動反映局部<strong>有效尺度</strong>，Jacobian 的 intrinsics 本身定義了局部尺度。</p>
+<h3 id="43-vae">4.3 VAE 圖像語義</h3>
+<p>在某點 <span class="arithmatex">\(z\)</span> 上，假設方向 <span class="arithmatex">\(du\)</span> 僅改變微弱背景，代表 <span class="arithmatex">\(\|du\|_G\)</span> 很小。
+假設另一個方向 <span class="arithmatex">\(dv\)</span> 改變物件類別，代表 <span class="arithmatex">\(\|dv\|_G\)</span> 很大，語意在這個方向上會變化很大。
+因此，當我們選擇沿著潛空間 <span class="arithmatex">\(\mathcal{Z}\)</span> 中的一個 geodesic 行走，映射到圖像（資料）空間中則會維持語義平順。</p>
+<h2 id="5">5. 為何需要拉回</h2>
+<p>如果我們直接在潛空間中用歐氏距離來計算，會忽略<strong>輸出語義變化速率</strong>的非均勻性。但使用 pullback metric 則可以提供：</p>
+<ol>
+<li>語義敏感的距離函數。</li>
+<li>更合理的插值，避免穿越輸出大幅扭曲區域或是語意未定義的區域。</li>
+<li>可導出 geodesic 最短路徑問題來得到一個合理的 transition trajectory：</li>
+</ol>
+<div class="arithmatex">\[\mathrm{Length}(\gamma) = \int_0^1 \sqrt{ \dot{\gamma}(t)^T G(\gamma(t)) \dot{\gamma}(t)} dt\]</div>
+<h2 id="6-pullback-pushforward">6. Pullback 與 Pushforward（操作對偶）</h2>
+<ul>
+<li>Pushforward: 將向量 <span class="arithmatex">\(z\)</span> 映射到目標空間中的資料點 <span class="arithmatex">\(x\)</span>。</li>
+</ul>
+<div class="arithmatex">\[(Df)_p : T_p \mathcal{Z} \to T_{f(p)} \mathcal{X}\]</div>
+<ul>
+<li>Pullback Metric: 使用 pushforward 把來源切向量映到目標後，用 <span class="arithmatex">\(g_N\)</span> 評估，再把結果視為來源上的內積。</li>
+</ul>
+<p>對偶的操作為：向量 <span class="arithmatex">\(z\)</span> 被 pushforward 成 <span class="arithmatex">\(x\)</span>，metric 被 pullback 回潛空間 <span class="arithmatex">\(\mathcal{Z}\)</span>。</p>
+<h2 id="7-degeneracy-regularization">7. 退化與正則（Degeneracy &amp; Regularization）</h2>
+<p>若潛在空間 <span class="arithmatex">\(\mathcal{Z}\)</span> 的維度 <span class="arithmatex">\(d\)</span> 小於目標空間 <span class="arithmatex">\(\mathcal{X}\)</span> 的維度 <span class="arithmatex">\(m\)</span>，
+<span class="arithmatex">\(G(z)\)</span> 為 <span class="arithmatex">\(d \times d\)</span> Gram 矩陣，若 <span class="arithmatex">\(J_f\)</span> 秩不足 <span class="arithmatex">\(\mathrm{rank(J_f(z))} &lt; d\)</span> 則 <span class="arithmatex">\(G\)</span> 退化為半正定矩陣，也就是會出現一或多個「零特徵值」，表示資訊摺疊。
+出現零特徵值意味著在那些方向上，潛在空間的小變動 <span class="arithmatex">\(dz\)</span> 幾乎不會在輸出空間造成變化。
+換句話說，這些方向對應的是「無資訊方向」或「冗餘方向」。
+在 geodesic 最佳化時，這樣的零特徵值會造成：</p>
+<ol>
+<li>連續 geodesic ODE 可能病態。</li>
+<li>跑最短路時會出現「零成本」方向（不穩定），優化時可能傾向在這些方向「亂跑」，因為在這些方向推動不會被懲罰（距離為零）。</li>
+</ol>
+<p>解決方案：</p>
+<ol>
+<li>加 Regularization ：<span class="arithmatex">\(G_{\varepsilon}(z) = J_f(z)^T J_f(z) + \varepsilon I\)</span>。</li>
+<li>特徵值截斷：只保留 <span class="arithmatex">\(\lambda_i &gt; \tau\)</span> 主子空間作距離。</li>
+<li>以圖近似取代連續優化，隱式避開數值解 geodesic ODE。</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

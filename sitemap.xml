@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/tags/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/posts/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/posts/pullback_riemannian_metric/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/projects/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/projects/diffusion/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/projects/rivae/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+    <url>
+         <loc>https://jrunkening.github.io/jrunkening/projects/vae/</loc>
+         <lastmod>2025-11-10</lastmod>
+    </url>
+</urlset>
