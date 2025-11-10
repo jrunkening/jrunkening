@@ -2,8 +2,6 @@
 authors:
   - JingYu Ning
 
-date: 2025-10-10
-
 tags:
   - "VAE"
   - "Generative Model"
