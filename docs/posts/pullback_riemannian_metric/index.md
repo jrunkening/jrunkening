@@ -1,3 +1,16 @@
+---
+authors:
+  - JingYu Ning
+
+date: 2025-10-10
+
+tags:
+  - "Riemannian Geometry"
+  - "VAE"
+  - "Generative Model"
+  - "Manifold"
+---
+
 # Pullback Riemannian Metric
 
 在這篇文章中，我會嘗試用形式化的方式描述 **pullback Riemannian metric**，
