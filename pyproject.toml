@@ -1,0 +1,20 @@
+[project]
+name = "jrunkening"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "JingYu Ning",email = "jrunkening@noreply.localhost"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
